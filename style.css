@@ -1,0 +1,157 @@
+.container {
+    display: flex;
+
+    width: 1120px;
+    height: 960px;
+    background-color: #121212;
+    border-radius: 30px;
+}
+
+.container-navbar {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    justify-content: space-between;
+
+
+}
+
+.container-navbar-links {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 50px;
+    width: 500px;
+    align-items: center;
+}
+
+.container-navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: x-large;
+
+
+}
+
+#welcome-todo {
+    display: inline-flex;
+    color: white;
+    align-items: center;
+    font-size: x-large;
+    width: 500px;
+    justify-content: space-evenly;
+}
+
+.container-todo-add {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 650px;
+    margin-top: 200px;
+    background-color: #191919;
+    border-radius: 50px;
+    margin-left: 20px;
+
+}
+
+#to-do-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 350px;
+    height: 50px;
+    font-size: 300%;
+
+}
+
+#todo-add-input {
+    width: 350px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: white;
+    border: 1px white solid;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#todo-add-input::placeholder {
+    color: white;
+
+
+}
+
+#todo-add-button {
+    display: block;
+    width: 150px;
+    height: 75px;
+    border-radius: 20px;
+    margin-top: 50px;
+    font-size: xx-large;
+    background-image: linear-gradient(to right, #c21500 0%, #ffc500 51%, #c21500 100%);
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    background-size: 200% auto;
+    cursor: pointer;
+}
+
+#todo-add-button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.todo-item {
+    color: white;
+    font-size: large;
+}
+
+
+
+
+.container-todo-done {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: 650px;
+    margin-top: 200px;
+    margin-left: 580px;
+    border-radius: 50px;
+    background-color: #191919;
+
+
+}
+
+#container-todo-done-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 350px;
+    height: 50px;
+    font-size: 300%;
+
+}
+
+.lists {
+    color: white;
+    font-size: x-large;
+    list-style: none;
+
+}
+
+#done-list-button {
+    width: 70px;
+    height: 30px;
+    border-radius: 20px;
+
+}
