@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Dancing+Script:wght@500&family=Lexend+Deca&family=Roboto:wght@500&display=swap');
+
 .container {
     display: flex;
 
@@ -144,14 +146,57 @@
 
 .lists {
     color: white;
-    font-size: x-large;
-    list-style: none;
+    font-size: xx-large;
+    font-family: 'Dancing Script', cursive;
+    overflow: auto;
+    height: 100%;
+
 
 }
 
-#done-list-button {
-    width: 70px;
+.lists::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+    background-color: #CCCCCC;
+}
+
+.lists::-webkit-scrollbar {
+
+    width: 10px;
+    background-color: #F5F5F5;
+}
+
+.lists::-webkit-scrollbar-thumb {
+    background-color: #FFF;
+    background-image: -webkit-linear-gradient(90deg,
+            rgba(0, 0, 0, 1) 0%,
+            rgba(0, 0, 0, 1) 25%,
+            transparent 100%,
+            rgba(0, 0, 0, 1) 75%,
+            transparent)
+}
+
+
+
+.list-buttons {
+    width: 90px;
     height: 30px;
     border-radius: 20px;
+    font-size: large;
+    background-image: linear-gradient(to right, #2B7A0B 30%, #EAE509 70%, #5BB318 90%);
+    text-transform: uppercase;
+    transition: 0.5s;
+    color: white;
+    box-shadow: 0 0 10px #eee;
+    background-size: 200% auto;
+    cursor: pointer;
+    border: none;
+    margin-left: 50px;
+    margin-right: 20px;
 
+}
+
+.list-buttons:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
 }
